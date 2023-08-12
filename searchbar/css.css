@@ -1,0 +1,18 @@
+#container{
+    text-align: center;
+}
+#myUL{
+border: 1px solid red;
+display: hidden;
+}
+#myUL li a{
+text-decoration: none;
+list-style: none;
+}
+#myUL li{
+    display: none;
+
+}
+#myUL li:active{
+    display: block;
+}

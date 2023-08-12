@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div id="container">
+  <h1>Search bor for testing</h1>
+  <input type="text" name="" id="myInput" placeholder="Search you text" onkeyup="searchtext()">  
+<ul id="myUL">
+    <li><a href="#">My first search</a></li>
+    <li><a href="#">My second search</a></li>
+    <li><a href="#">My third search</a></li>
+    <li><a href="#">My fourth search</a></li>
+    <li><a href="#">My fifth search</a></li>
+    <li><a href="#">My sixth search</a></li>
+    <li><a href="#">My seventh search</a></li>
+
+</ul>
+</div>
+
+<script>
+    const searchtext = () =>{
+        let filter = document.getElementById('myInput').value.toUpperCase();
+
+        let ul = document.getElementById('myUL');
+
+        let li = ul.getElementsByTagName("li");
+
+        for(var i=0; i<li.length; i++){
+          let a = li[i].getElementsByTagName("a")[0];
+          
+          let textValue = a.textContent ||a.innerHTML;
+
+          if(textValue.toUpperCase().indexOf(filter) >-1){
+            li[i].style.display = "";  
+          }
+          else{
+              li[i].style.display="none";
+          }
+        }
+    }
+</script>
+</body>
+
+</html>

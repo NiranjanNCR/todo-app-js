@@ -1,0 +1,137 @@
+body{
+    background-color: rgb(199, 216, 216);
+    margin: 0;
+    padding: 0;
+    
+}
+.heading{
+    background-color: rgb(5, 97, 210);
+    height: 80px;
+    width: 100%;
+    margin-top: -22px;
+    display: flex;
+    
+}
+.heading h1{
+    color: white;
+    margin-left: 20px;
+    padding: 15px;
+    /* border: 1px solid red; */
+    font-family: 'Mochiy Pop P One', sans-serif
+}
+.heading h1 i{
+    margin-right: 10px;
+}
+.note{
+    width: 300px;
+    height: 240px;
+    background-color: rgb(231, 231, 231);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    margin-left: 20px;
+    flex-direction: row;
+    display: inline-block;
+}
+
+.note textarea{
+    width: 300px;
+    height: 240px;
+    border-collapse: collapse;
+
+}
+
+.btn-div{
+    /* border: 1px solid red; */
+    display: flex;
+    float: right;
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+button.learn-more{
+    background-color: black;
+    width: 50px;
+    border-radius: 20px;
+    
+    
+}
+button.learn-more:hover{
+background-color: aquamarine;
+font-size: 20px;
+border-bottom: aliceblue;
+border-top: aliceblue;
+border-right: aliceblue;
+border-left: aliceblue;
+animation: move 60ms  1 forwards;
+}
+@keyframes move{
+    0%{background-color:rgb(2, 250, 2); width: 60px;}
+    20%{background-color:rgb(2, 211, 2); width: 70px;}
+    40%{background-color:rgb(23, 250, 23); width: 80px;}
+    60%{background-color:rgb(17, 253, 17); width: 90px;}
+
+    80%{background-color:rgb(20, 250, 20); width: 100px; }
+    100%{background-color: rgb(16, 254, 16); width: 110px;}
+} 
+.button-text{
+    color: rgb(255, 253, 253);
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button-text:hover{
+    font-size: 20px;
+}
+
+.operation{
+    /* border: 1px solid red; */
+    display: flex;
+    float: right;
+    padding-left: 70%;
+    
+}
+.edit{
+background-color: rgb(21, 125, 252);
+border-radius: 100%;
+height: 40px;
+width: 40px;
+color: white;
+border-style: none;
+margin: 5px;
+}
+.edit:hover{
+    background-color: rgb(24, 172, 24);
+}
+.delete{
+    background-color: rgb(255, 0, 0);
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    color: white;
+border-style: none;
+margin: 5px;
+}
+
+.delete:hover{
+    background-color: brown;
+}
+.hidden{
+    display:none;
+}
+
+@media(max-width = 375px){
+    .button-text{
+        float: left;
+    }
+    .heading h1{
+        color: white;
+    margin-left: 5px;
+    padding: 15px;
+    /* border: 1px solid red; */
+    font-family: 'Mochiy Pop P One', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    }
+}
